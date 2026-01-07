@@ -11,7 +11,7 @@ export const useAppContext = () => {
   return context;
 };
 
-const API_URL = "http://localhost:5000/api/applications";
+const API_URL = "https://huntboard.onrender.com/api/applications";
 
 const getData = async () => {
   try {

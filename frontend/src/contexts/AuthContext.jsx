@@ -34,11 +34,14 @@ export const AuthProvider = ({ children }) => {
 
   const verifyToken = async (tokenToVerify) => {
     try {
-      const response = await axios.get("http://localhost:5000/api/auth/me", {
-        headers: {
-          Authorization: `Bearer ${tokenToVerify}`,
-        },
-      });
+      const response = await axios.get(
+        "https://huntboard.onrender.com/api/auth/me",
+        {
+          headers: {
+            Authorization: `Bearer ${tokenToVerify}`,
+          },
+        }
+      );
       setUser(response.data.user);
       setToken(tokenToVerify);
       setError(null);
@@ -56,7 +59,7 @@ export const AuthProvider = ({ children }) => {
     try {
       setError(null);
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://huntboard.onrender.com/api/auth/register",
         {
           name,
           email,
@@ -77,7 +80,7 @@ export const AuthProvider = ({ children }) => {
     try {
       setError(null);
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://huntboard.onrender.com/api/auth/login",
         {
           email,
           password,
