@@ -11,7 +11,7 @@ import Signup from "./components/auth/Signup";
 import { Briefcase, Filter, Plus, LogOut } from "./utils/Icons";
 import "./App.css";
 
-const AppContent = () => {
+
   const {
     searchTerm,
     setSearchTerm,
