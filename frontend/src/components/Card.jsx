@@ -13,9 +13,7 @@ const Card = ({ job }) => {
     
 
   return (
-    <div
-      className="bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] p-4 mb-3 cursor-move hover:shadow-[0_25px_60px_rgba(0,0,0,0.1)] transition-shadow duration-200 relative"
-      onMouseEnter={() => setIsHovered(true)}
+    <di setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       draggable
       onDragStart={(e) => {
