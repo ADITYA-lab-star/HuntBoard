@@ -92,15 +92,7 @@ const AppContent = () => {
       <AddJobModal
         isOpen={isAddModalOpen}
         onClose={() => setIsAddModalOpen(false)}
-        initialStatus={initialStatus}
-      />
-    </div>
-  );
-};
-
-const Dashboard = () => {
-  return (
-    <AppProvider>
+        initialStatProvider>
       <AppContent />
     </AppProvider>
   );
