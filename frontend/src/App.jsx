@@ -27,7 +27,8 @@ const AppContent = () => {
     setIsAddModalOpen(true);
   };
 
-  return (
+
+  
     <div className="min-h-screen bg-slate-100">
       {/* Sticky Navigation */}
       <nav className="sticky top-0 z-40 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border-b border-slate-200">
